@@ -2,6 +2,8 @@ import React from 'react';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import logo from '../images/WITfivicon.png';
+import { Link } from "gatsby"
+
 
 export default function Header() {
   return (
@@ -39,22 +41,66 @@ export default function Header() {
               <a className="nav-link" href="/">
                 Home
               </a>
+              
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/resources">
-                Resources
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/organisation/">Organizations</a>
+          <a class="dropdown-item" href="/scholarship/">Scholarships</a>
+          <a class="dropdown-item" href="#">Blogs and Articles</a>
+          <a class="dropdown-item" href="#">Helpful Github Repos</a>
+          <a class="dropdown-item" href="/resources/">Other Resources</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Community
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Join Discord</a>
+          <a class="dropdown-item" href="#">Github Repo</a>
+          <a class="dropdown-item" href="#">Founder</a>
+          <a class="dropdown-item" href="#">Contributers</a>
+          <a class="dropdown-item" href="#">About Community</a>
+          <a class="dropdown-item" href="/inspirations/">Inspirations</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Contribute
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Github Repo</a>
+          <a class="dropdown-item" href="#">Contributing Guidelines</a>
+          <a class="dropdown-item" href="#">Resources for beginners</a>
+        </div>
+      </li>
+      {/* Some dummy code below to create space around Contribute Dropdown */}
+      <li className="nav-item active">
+              <a className="nav-link" >
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/community">
-                Community
+      </li>
+      <li className="nav-item active">
+              <a className="nav-link" >
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/contributing">
-                Contributing
+      </li>
+      <li className="nav-item active">
+              <a className="nav-link" >
               </a>
-            </li>
+      </li>
+      <li className="nav-item active">
+              <a className="nav-link" >
+              </a>
+      </li>
+      <li className="nav-item active">
+              <a className="nav-link" >
+              </a>
+      </li>
+      {/* Dummy code ends */}
+      
           </ul>
         </div>
       </nav>
